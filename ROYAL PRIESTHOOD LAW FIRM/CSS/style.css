@@ -1,0 +1,3263 @@
+/* =========================================================
+   ROYAL PRIESTHOOD LAW FIRM
+   MAIN WEBSITE STYLES
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #17202a;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+
+.section-eyebrow {
+    color: #b89552;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+
+strong {
+    color: #17202a;
+}
+
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: relative;
+    z-index: 100;
+    background: #101923;
+    border-bottom: 1px solid rgba(184, 149, 82, 0.35);
+}
+
+
+.header-container {
+    min-height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.logo-link img {
+    width: 165px;
+    height: auto;
+}
+
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    margin-left: auto;
+}
+
+
+.main-navigation a {
+    position: relative;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+
+.main-navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #b89552;
+    transition: 0.3s ease;
+}
+
+
+.main-navigation a:hover {
+    color: #d7b96f;
+}
+
+
+.main-navigation a:hover::after {
+    width: 100%;
+}
+
+
+.consultation-button {
+    padding: 13px 19px;
+    border: 1px solid #b89552;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+
+.consultation-button:hover {
+    background: #b89552;
+    color: #101923;
+}
+
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #101923;
+}
+
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/LAW 2.png");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.22;
+
+    transform: scale(1.03);
+}
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 18, 27, 0.97) 0%,
+            rgba(10, 18, 27, 0.91) 38%,
+            rgba(10, 18, 27, 0.65) 65%,
+            rgba(10, 18, 27, 0.72) 100%
+        );
+}
+
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 70px;
+
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.hero-eyebrow {
+    color: #d0af68;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+
+.hero h1 {
+    color: #ffffff;
+    font-size: clamp(42px, 5vw, 70px);
+    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    margin-bottom: 28px;
+}
+
+
+.hero h1 span {
+    color: #d2b06b;
+}
+
+
+.hero-description {
+    max-width: 610px;
+    color: rgba(255, 255, 255, 0.84);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.primary-button,
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 0 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+
+.primary-button {
+    background: #b89552;
+    color: #101923;
+}
+
+
+.primary-button:hover {
+    background: #d0af68;
+    transform: translateY(-2px);
+}
+
+
+.secondary-button {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+}
+
+
+.secondary-button:hover {
+    background: #ffffff;
+    color: #101923;
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================================================
+   HERO IMAGE - LAW 1
+========================================================= */
+
+.hero-image {
+    position: relative;
+    max-width: 550px;
+    justify-self: end;
+}
+
+
+.hero-image-frame {
+    position: relative;
+
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(208, 175, 104, 0.7);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(3px);
+}
+
+
+.hero-image-frame::before {
+    content: "";
+
+    position: absolute;
+
+    top: -8px;
+    left: -8px;
+
+    width: 55px;
+    height: 55px;
+
+    border-top: 2px solid #d0af68;
+    border-left: 2px solid #d0af68;
+}
+
+
+.hero-image-frame::after {
+    content: "";
+
+    position: absolute;
+
+    right: -8px;
+    bottom: -8px;
+
+    width: 55px;
+    height: 55px;
+
+    border-right: 2px solid #d0af68;
+    border-bottom: 2px solid #d0af68;
+}
+
+
+.hero-image-frame img {
+    width: 100%;
+    height: 390px;
+
+    object-fit: cover;
+}
+
+
+.hero-image-caption {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 17px;
+
+    color: #d0af68;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.hero-scroll {
+    position: absolute;
+
+    bottom: 24px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.hero-scroll span {
+    width: 35px;
+    height: 1px;
+    background: #b89552;
+}
+
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-preview {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+
+.about-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 100px;
+}
+
+
+.about-heading h2 {
+    color: #101923;
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.08;
+    font-weight: 500;
+}
+
+
+.about-content {
+    max-width: 700px;
+}
+
+
+.about-content p {
+    margin-bottom: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #59636d;
+    font-size: 15px;
+}
+
+
+.about-content .large-paragraph {
+    color: #27323d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   TEXT LINKS
+========================================================= */
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-top: 12px;
+
+    color: #17202a;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #b89552;
+    padding-bottom: 7px;
+
+    transition: 0.3s ease;
+}
+
+
+.text-link span {
+    color: #b89552;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+
+.text-link:hover {
+    color: #b89552;
+}
+
+
+.text-link:hover span {
+    transform: translateX(5px);
+}
+
+
+
+/* =========================================================
+   PRACTICE AREAS
+========================================================= */
+
+.practice-preview {
+    padding: 120px 0;
+    background: #f5f3ef;
+}
+
+
+.practice-container {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 80px;
+}
+
+
+.practice-intro {
+    position: sticky;
+    top: 30px;
+    align-self: start;
+}
+
+
+.practice-intro h2 {
+    color: #101923;
+    font-size: clamp(35px, 4vw, 50px);
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+
+.practice-intro p {
+    color: #68717a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+.practice-card {
+    position: relative;
+
+    min-height: 270px;
+
+    padding: 32px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e0d8;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.practice-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #b89552;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.09);
+}
+
+
+.practice-number {
+    display: block;
+
+    color: #b89552;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin-bottom: 45px;
+}
+
+
+.practice-card h3 {
+    color: #17202a;
+
+    font-size: 22px;
+    line-height: 1.25;
+
+    margin-bottom: 15px;
+}
+
+
+.practice-card p {
+    color: #6a727a;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+.practice-arrow {
+    position: absolute;
+
+    right: 30px;
+    bottom: 25px;
+
+    color: #b89552;
+    font-size: 22px;
+
+    transition: 0.3s ease;
+}
+
+
+.practice-card:hover .practice-arrow {
+    transform: translateX(7px);
+}
+
+
+
+/* =========================================================
+   PRINCIPAL
+========================================================= */
+
+.principal-preview {
+    padding: 120px 0;
+
+    background: #101923;
+
+    color: #ffffff;
+}
+
+
+.principal-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+
+.principal-image {
+    position: relative;
+}
+
+
+.principal-image-frame {
+    padding: 10px;
+
+    border: 1px solid rgba(184, 149, 82, 0.7);
+}
+
+
+.principal-image-frame img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+
+.principal-image-label {
+    position: absolute;
+
+    left: 20px;
+    bottom: 20px;
+
+    padding: 11px 17px;
+
+    background: #b89552;
+    color: #101923;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.principal-content h2 {
+    color: #ffffff;
+
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.08;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+.principal-content p {
+    color: rgba(255, 255, 255, 0.70);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.principal-content .principal-intro {
+    color: #d0af68;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+
+.principal-content .text-link {
+    color: #ffffff;
+}
+
+
+.principal-content .text-link:hover {
+    color: #d0af68;
+}
+
+
+
+/* =========================================================
+   KNOWLEDGE CENTRE
+========================================================= */
+
+.knowledge-preview {
+    padding: 120px 0;
+
+    background: #ffffff;
+}
+
+
+.knowledge-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: end;
+
+    margin-bottom: 60px;
+}
+
+
+.knowledge-heading h2 {
+    color: #101923;
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+
+.knowledge-intro p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.knowledge-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.knowledge-card {
+    position: relative;
+
+    min-height: 280px;
+
+    padding: 35px;
+
+    background: #f5f3ef;
+
+    border-top: 3px solid #b89552;
+
+    transition: 0.3s ease;
+}
+
+
+.knowledge-card:hover {
+    background: #101923;
+
+    transform: translateY(-7px);
+}
+
+
+.knowledge-card > span {
+    color: #b89552;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.knowledge-card h3 {
+    margin-top: 45px;
+
+    color: #17202a;
+
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+
+.knowledge-card p {
+    margin-top: 15px;
+
+    color: #6a727a;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+
+.knowledge-card strong {
+    position: absolute;
+
+    right: 30px;
+    bottom: 25px;
+
+    color: #b89552;
+
+    font-size: 22px;
+}
+
+
+.knowledge-card:hover h3 {
+    color: #ffffff;
+}
+
+
+.knowledge-card:hover p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+
+/* =========================================================
+   CONSULTATION
+========================================================= */
+
+.consultation-cta {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #101923;
+}
+
+
+.consultation-background {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(10, 18, 27, 0.88),
+            rgba(10, 18, 27, 0.94)
+        ),
+        url("../images/LAW 2.png");
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.9;
+}
+
+
+.consultation-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(760px, 90%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.consultation-content h2 {
+    color: #ffffff;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+.consultation-content p:not(.section-eyebrow) {
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+
+.cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 54px;
+
+    padding: 0 28px;
+
+    background: #b89552;
+
+    color: #101923;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s ease;
+}
+
+
+.cta-button:hover {
+    background: #d0af68;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    background: #0b1118;
+
+    color: #ffffff;
+}
+
+
+.footer-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    padding-top: 75px;
+    padding-bottom: 60px;
+}
+
+
+.footer-brand img {
+    width: 165px;
+    height: auto;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-brand p {
+    color: rgba(255, 255, 255, 0.55);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+.footer-links {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
+}
+
+
+.footer-links h3 {
+    color: #d0af68;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-links a {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    margin-bottom: 11px;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-links a:hover {
+    color: #d0af68;
+
+    padding-left: 4px;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.footer-bottom-container {
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.40);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+
+    .main-navigation {
+        gap: 16px;
+    }
+
+
+    .main-navigation a {
+        font-size: 12px;
+    }
+
+
+    .consultation-button {
+        padding: 11px 14px;
+        font-size: 11px;
+    }
+
+
+    .hero-container {
+        gap: 45px;
+    }
+
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+
+    .about-container,
+    .practice-container,
+    .principal-container {
+        gap: 55px;
+    }
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+
+    .header-container {
+        min-height: auto;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        flex-direction: column;
+    }
+
+
+    .main-navigation {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px 20px;
+
+        margin-left: 0;
+    }
+
+
+    .consultation-button {
+        display: none;
+    }
+
+
+    /* HERO */
+
+
+    .hero {
+        min-height: auto;
+    }
+
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+
+
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .hero-eyebrow {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .hero-image {
+        width: 100%;
+        max-width: 600px;
+
+        justify-self: center;
+    }
+
+
+    .hero-image-frame img {
+        height: 320px;
+    }
+
+
+    .hero-scroll {
+        display: none;
+    }
+
+
+    /* ABOUT */
+
+
+    .about-preview,
+    .practice-preview,
+    .principal-preview,
+    .knowledge-preview {
+        padding: 80px 0;
+    }
+
+
+    .about-container,
+    .practice-container,
+    .principal-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-heading h2 {
+        font-size: 44px;
+    }
+
+
+    /* PRACTICE */
+
+
+    .practice-intro {
+        position: static;
+    }
+
+
+    .practice-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PRINCIPAL */
+
+
+    .principal-content h2 {
+        font-size: 44px;
+    }
+
+
+    /* KNOWLEDGE */
+
+
+    .knowledge-heading {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .knowledge-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FOOTER */
+
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .footer-bottom-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+
+    .container {
+        width: 92%;
+    }
+
+
+    .logo-link img {
+        width: 145px;
+    }
+
+
+    .main-navigation {
+        gap: 10px 14px;
+    }
+
+
+    .main-navigation a {
+        font-size: 10px;
+    }
+
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+
+    .hero-image-frame img {
+        height: 250px;
+    }
+
+
+    .hero-image-caption {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+
+    .about-heading h2,
+    .principal-content h2 {
+        font-size: 38px;
+    }
+
+
+    .practice-card {
+        min-height: 250px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================================
+   INNER PAGE HERO
+========================================================= */
+
+.inner-page-hero {
+    position: relative;
+
+    min-height: 510px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #101923;
+}
+
+
+.inner-page-background {
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url("../images/LAW 2.png");
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.18;
+}
+
+
+.inner-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 18, 27, 0.97),
+            rgba(10, 18, 27, 0.78)
+        );
+}
+
+
+.inner-page-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.inner-page-content h1 {
+    color: #ffffff;
+
+    font-size: clamp(48px, 6vw, 75px);
+
+    line-height: 1.02;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+.inner-page-content > p:last-child {
+    max-width: 650px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+}
+
+
+
+/* =========================================================
+   FIRM STORY
+========================================================= */
+
+.firm-story {
+    padding: 120px 0;
+
+    background: #ffffff;
+}
+
+
+.firm-story-container {
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.25fr;
+
+    gap: 100px;
+}
+
+
+.firm-story-heading h2,
+.today-heading h2,
+.values-heading h2,
+.approach-container h2,
+.principal-story-heading h2,
+.principal-experience-heading h2 {
+    color: #101923;
+
+    font-size: clamp(38px, 4vw, 55px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+
+.firm-story-content {
+    max-width: 750px;
+}
+
+
+.firm-story-content p,
+.journey-content p,
+.today-content p,
+.approach-container p {
+    color: #626b73;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 22px;
+}
+
+
+.firm-story-content .large-paragraph {
+    color: #27323d;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   JOURNEY
+========================================================= */
+
+.journey-section {
+    padding: 110px 0;
+
+    background: #f5f3ef;
+}
+
+
+.journey-container {
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.journey-content h2 {
+    color: #101923;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+
+.journey-highlight {
+    min-height: 360px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #101923;
+
+    border: 1px solid #b89552;
+}
+
+
+.journey-number {
+    color: #d0af68;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 130px;
+
+    line-height: 1;
+}
+
+
+.journey-label {
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   TODAY
+========================================================= */
+
+.today-section {
+    padding: 120px 0;
+
+    background: #ffffff;
+}
+
+
+.today-container {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 100px;
+}
+
+
+.today-content {
+    max-width: 750px;
+}
+
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.values-section {
+    padding: 120px 0;
+
+    background: #f5f3ef;
+}
+
+
+.values-heading {
+    max-width: 650px;
+
+    margin-bottom: 60px;
+}
+
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.value-card {
+    min-height: 260px;
+
+    padding: 32px;
+
+    background: #ffffff;
+
+    border-top: 3px solid #b89552;
+
+    transition: 0.3s ease;
+}
+
+
+.value-card:hover {
+    background: #101923;
+
+    transform: translateY(-6px);
+}
+
+
+.value-card > span {
+    color: #b89552;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.value-card h3 {
+    color: #17202a;
+
+    font-size: 23px;
+
+    margin-top: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+.value-card p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+.value-card:hover h3 {
+    color: #ffffff;
+}
+
+
+.value-card:hover p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.approach-section {
+    padding: 120px 0;
+
+    background: #ffffff;
+}
+
+
+.approach-container {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 100px;
+}
+
+
+.approach-container .primary-button {
+    margin-top: 15px;
+}
+
+
+
+/* =========================================================
+   PRINCIPAL PAGE HERO
+========================================================= */
+
+.principal-page-hero {
+    padding: 100px 0;
+
+    background: #101923;
+
+    color: #ffffff;
+}
+
+
+.principal-page-hero-container {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.principal-page-image-frame {
+    padding: 10px;
+
+    border: 1px solid #b89552;
+}
+
+
+.principal-page-image-frame img {
+    width: 100%;
+
+    max-height: 620px;
+
+    object-fit: cover;
+}
+
+
+.principal-page-intro h1 {
+    color: #ffffff;
+
+    font-size: clamp(42px, 5vw, 68px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+
+.principal-page-lead {
+    max-width: 700px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+
+.principal-facts {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.principal-facts > div {
+    padding: 25px;
+
+    border-left: 2px solid #b89552;
+
+    background: rgba(255, 255, 255, 0.04);
+}
+
+
+.principal-facts strong {
+    display: block;
+
+    color: #d0af68;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    line-height: 1;
+
+    margin-bottom: 10px;
+}
+
+
+.principal-facts span {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.60);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   PRINCIPAL STORY
+========================================================= */
+
+.principal-story {
+    padding: 120px 0;
+
+    background: #ffffff;
+}
+
+
+.principal-story-container {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 100px;
+}
+
+
+.principal-story-content {
+    max-width: 750px;
+}
+
+
+.principal-story-content p {
+    color: #626b73;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 22px;
+}
+
+
+.principal-story-content .large-paragraph {
+    color: #27323d;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   PRINCIPAL MILESTONE
+========================================================= */
+
+.principal-milestone {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 110px 0;
+
+    background: #101923;
+}
+
+
+.principal-milestone-background {
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url("../images/LAW 2.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    opacity: 0.10;
+}
+
+
+.principal-milestone-container {
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 0.5fr 1.5fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.milestone-number {
+    color: #d0af68;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(130px, 17vw, 240px);
+
+    line-height: 0.8;
+
+    font-weight: 400;
+}
+
+
+.milestone-content h2 {
+    color: #ffffff;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+.milestone-content p:not(.section-eyebrow) {
+    color: rgba(255, 255, 255, 0.70);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================================
+   PRINCIPAL EXPERIENCE
+========================================================= */
+
+.principal-experience {
+    padding: 120px 0;
+
+    background: #f5f3ef;
+}
+
+
+.principal-experience-heading {
+    max-width: 700px;
+
+    margin-bottom: 60px;
+}
+
+
+.experience-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.experience-card {
+    min-height: 290px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-top: 3px solid #b89552;
+
+    transition: 0.3s ease;
+}
+
+
+.experience-card:hover {
+    background: #101923;
+
+    transform: translateY(-6px);
+}
+
+
+.experience-card > span {
+    color: #b89552;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.experience-card h3 {
+    color: #17202a;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    margin-top: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.experience-card p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+.experience-card:hover h3 {
+    color: #ffffff;
+}
+
+
+.experience-card:hover p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+
+/* =========================================================
+   PRINCIPAL STATEMENT
+========================================================= */
+
+.principal-statement {
+    padding: 120px 0;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+
+.principal-statement blockquote {
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    color: #101923;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(32px, 4vw, 52px);
+
+    line-height: 1.25;
+
+    font-weight: 400;
+}
+
+
+.principal-statement > .container > p:not(.section-eyebrow) {
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+}
+
+
+
+/* =========================================================
+   INNER PAGES — MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+
+    .inner-page-hero {
+        min-height: 430px;
+    }
+
+
+    .inner-page-content h1 {
+        font-size: 50px;
+    }
+
+
+    .firm-story-container,
+    .journey-container,
+    .today-container,
+    .approach-container,
+    .principal-page-hero-container,
+    .principal-story-container,
+    .principal-milestone-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .experience-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .milestone-number {
+        font-size: 150px;
+
+        text-align: center;
+    }
+
+
+    .principal-page-intro h1 {
+        font-size: 48px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+
+    .inner-page-content h1 {
+        font-size: 43px;
+    }
+
+
+    .values-grid,
+    .experience-grid,
+    .principal-facts {
+        grid-template-columns: 1fr;
+    }
+
+
+    .journey-number {
+        font-size: 100px;
+    }
+
+
+    .milestone-number {
+        font-size: 120px;
+    }
+
+
+    .principal-page-intro h1 {
+        font-size: 40px;
+    }
+
+
+    .principal-statement blockquote {
+        font-size: 31px;
+    }
+
+}
+/* =========================================================
+   PRACTICE AREAS PAGE
+========================================================= */
+
+.practice-page-intro {
+    padding: 110px 0;
+
+    background: #ffffff;
+}
+
+
+.practice-page-intro-container {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+.practice-page-intro h2 {
+    color: #101923;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+
+.practice-page-intro-container > div:last-child {
+    max-width: 700px;
+}
+
+
+.practice-page-intro-container > div:last-child p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================================
+   PRACTICE CATEGORY
+========================================================= */
+
+.practice-category {
+    padding: 110px 0;
+
+    background: #f5f3ef;
+}
+
+
+.practice-category-light {
+    background: #ffffff;
+}
+
+
+.practice-category-dark {
+    background: #101923;
+}
+
+
+.practice-category-heading {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+
+    margin-bottom: 55px;
+}
+
+
+.practice-category-number {
+    color: #b89552;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 65px;
+
+    line-height: 1;
+}
+
+
+.practice-category-heading h2 {
+    color: #101923;
+
+    font-size: clamp(38px, 4vw, 55px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+
+    max-width: 700px;
+}
+
+
+.practice-category-dark .practice-category-heading h2 {
+    color: #ffffff;
+}
+
+
+
+/* =========================================================
+   FULL PRACTICE GRID
+========================================================= */
+
+.full-practice-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.full-practice-card {
+    position: relative;
+
+    min-height: 280px;
+
+    padding: 32px;
+
+    background: #ffffff;
+
+    border-top: 3px solid #b89552;
+
+    scroll-margin-top: 100px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.full-practice-card:hover {
+    transform: translateY(-7px);
+
+    background: #101923;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+
+.full-practice-card > span {
+    color: #b89552;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.full-practice-card h3 {
+    color: #17202a;
+
+    font-size: 23px;
+
+    line-height: 1.25;
+
+    margin-top: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.full-practice-card p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+
+.full-practice-card:hover h3 {
+    color: #ffffff;
+}
+
+
+.full-practice-card:hover p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.featured-practice {
+    border-top-width: 5px;
+}
+
+
+
+/* =========================================================
+   SPECIALIST SECTION
+========================================================= */
+
+.specialist-section {
+    padding: 120px 0;
+
+    background: #101923;
+}
+
+
+.specialist-container {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 100px;
+}
+
+
+.specialist-container h2 {
+    color: #ffffff;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+
+.specialist-container > div:last-child p {
+    color: rgba(255, 255, 255, 0.70);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 22px;
+}
+
+
+
+/* =========================================================
+   PRACTICE PAGE MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+
+    .full-practice-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .practice-page-intro-container,
+    .specialist-container {
+        gap: 55px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+
+    .practice-page-intro-container,
+    .specialist-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .practice-category-heading {
+        grid-template-columns: 70px 1fr;
+
+        gap: 20px;
+    }
+
+
+    .practice-category-number {
+        font-size: 50px;
+    }
+
+
+    .full-practice-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+
+    .practice-category-heading {
+        grid-template-columns: 1fr;
+    }
+
+
+    .practice-category-number {
+        font-size: 45px;
+    }
+
+
+    .practice-page-intro,
+    .practice-category,
+    .specialist-section {
+        padding: 80px 0;
+    }
+
+}
+/* =========================================================
+   KNOWLEDGE CENTRE PAGE
+========================================================= */
+
+.knowledge-page-hero {
+    position: relative;
+
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #101923;
+}
+
+
+.knowledge-page-background {
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url("../images/LAW 2.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    opacity: 0.16;
+}
+
+
+.knowledge-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 18, 27, 0.97),
+            rgba(10, 18, 27, 0.70)
+        );
+}
+
+
+.knowledge-page-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.knowledge-page-content h1 {
+    color: #ffffff;
+
+    font-size: clamp(48px, 6vw, 75px);
+
+    line-height: 1.02;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+.knowledge-page-content > p:last-child {
+    max-width: 700px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   KNOWLEDGE INTRODUCTION
+========================================================= */
+
+.knowledge-introduction {
+    padding: 115px 0;
+
+    background: #ffffff;
+}
+
+
+.knowledge-introduction-container {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 100px;
+}
+
+
+.knowledge-introduction h2 {
+    color: #101923;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+
+.knowledge-introduction-container > div:last-child {
+    max-width: 750px;
+}
+
+
+.knowledge-introduction-container > div:last-child p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 22px;
+}
+
+
+
+/* =========================================================
+   KNOWLEDGE FEATURED
+========================================================= */
+
+.knowledge-featured {
+    padding: 115px 0;
+
+    background: #f5f3ef;
+}
+
+
+.knowledge-section-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 0.8fr;
+
+    gap: 80px;
+
+    align-items: end;
+
+    margin-bottom: 60px;
+}
+
+
+.knowledge-section-heading h2 {
+    color: #101923;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+
+.knowledge-section-heading > p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   RESOURCE GRID
+========================================================= */
+
+.knowledge-resource-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.knowledge-resource-card {
+    min-height: 350px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-top: 3px solid #b89552;
+
+    scroll-margin-top: 100px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.knowledge-resource-card:hover {
+    transform: translateY(-7px);
+
+    background: #101923;
+}
+
+
+.knowledge-card-number {
+    color: #b89552;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.knowledge-card-label {
+    color: #b89552 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 10px !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 1.8px;
+
+    margin-bottom: 12px !important;
+}
+
+
+.knowledge-resource-card h3 {
+    color: #17202a;
+
+    font-size: 23px;
+
+    line-height: 1.25;
+
+    margin-bottom: 15px;
+}
+
+
+.knowledge-resource-card > div > p:last-child {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+
+.knowledge-resource-card:hover h3 {
+    color: #ffffff;
+}
+
+
+.knowledge-resource-card:hover > div > p:last-child {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.knowledge-card-link {
+    color: #101923;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    margin-top: 25px;
+}
+
+
+.knowledge-card-link span {
+    color: #b89552;
+
+    font-size: 18px;
+
+    margin-left: 8px;
+}
+
+
+.knowledge-resource-card:hover .knowledge-card-link {
+    color: #ffffff;
+}
+
+
+
+/* =========================================================
+   KNOWLEDGE AUDIENCE
+========================================================= */
+
+.knowledge-audience {
+    padding: 115px 0;
+
+    background: #ffffff;
+}
+
+
+.knowledge-audience-heading {
+    max-width: 700px;
+
+    margin-bottom: 60px;
+}
+
+
+.knowledge-audience-heading h2 {
+    color: #101923;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+
+.knowledge-audience-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 18px;
+}
+
+
+.knowledge-audience-card {
+    min-height: 270px;
+
+    padding: 28px;
+
+    background: #f5f3ef;
+
+    border-top: 3px solid #b89552;
+}
+
+
+.knowledge-audience-card > span {
+    color: #b89552;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.knowledge-audience-card h3 {
+    color: #17202a;
+
+    font-size: 21px;
+
+    margin-top: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.knowledge-audience-card p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   KNOWLEDGE STATEMENT
+========================================================= */
+
+.knowledge-statement {
+    padding: 120px 0;
+
+    text-align: center;
+
+    background: #101923;
+}
+
+
+.knowledge-statement blockquote {
+    max-width: 850px;
+
+    margin: 30px auto;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 5vw, 65px);
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+
+.knowledge-statement > .container > p:last-child {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   KNOWLEDGE CTA
+========================================================= */
+
+.knowledge-cta {
+    padding: 110px 0;
+
+    background: #f5f3ef;
+}
+
+
+.knowledge-cta-container {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.knowledge-cta h2 {
+    color: #101923;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+}
+
+
+.knowledge-cta-container > div:last-child p {
+    color: #68717a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* =========================================================
+   KNOWLEDGE MOBILE
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .knowledge-resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .knowledge-audience-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .knowledge-page-hero {
+        min-height: 450px;
+    }
+
+
+    .knowledge-page-content h1 {
+        font-size: 50px;
+    }
+
+
+    .knowledge-introduction-container,
+    .knowledge-section-heading,
+    .knowledge-cta-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .knowledge-resource-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .knowledge-audience-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .knowledge-page-content h1 {
+        font-size: 43px;
+    }
+
+
+    .knowledge-resource-grid,
+    .knowledge-audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .knowledge-introduction,
+    .knowledge-featured,
+    .knowledge-audience,
+    .knowledge-statement,
+    .knowledge-cta {
+        padding: 80px 0;
+    }
+}
+
+/* =========================================
+   CONSULTATION FORM
+========================================= */
+
+.consultation-form-section {
+    padding: 80px 20px;
+    background: #f5f6f8;
+}
+
+.consultation-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.consultation-form-card {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+    border-top: 5px solid #c9a227;
+}
+
+.consultation-form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.consultation-form-header h2 {
+    margin-bottom: 12px;
+    color: #0b1f3a;
+    font-size: 32px;
+}
+
+.consultation-form-header p {
+    color: #666;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.consultation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #0b1f3a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d5d9df;
+    border-radius: 7px;
+    background: #fafafa;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #c9a227;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.12);
+}
+
+.form-group textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.form-submit {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-submit button {
+    background: #0b1f3a;
+    color: #ffffff;
+    border: none;
+    padding: 15px 38px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.form-submit button:hover {
+    background: #c9a227;
+    color: #0b1f3a;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+
+    .consultation-form-card {
+        padding: 30px 20px;
+    }
+
+    .consultation-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width,
+    .form-submit {
+        grid-column: 1;
+    }
+}
